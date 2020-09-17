@@ -1,0 +1,44 @@
+### GET TODOS
+GET http://localhost:8000/api/to_dos
+
+### SINGLE TODO
+GET http://127.0.0.1:8000/api/to_dos/3
+
+### BAD POST request
+POST http://localhost:8000/api/to_dos/
+Content-Type: application/json
+
+{
+    "item": "",
+    "status": ""
+}
+
+### First POST request
+POST http://localhost:8000/api/to_dos/
+Content-Type: application/json
+
+{
+    "item": "Fix the light bulb in my room",
+    "status": "To Do"
+}
+
+### First Todo PUT Request
+POST http://localhost:8000/api/to_dos/1?_method=PUT
+Content-Type: application/json
+
+{
+    "item": "Do the dishes",
+    "status": "In Progress"
+}
+
+### Second Todo PUT Request
+POST http://localhost:8000/api/to_dos/1?_method=PUT
+Content-Type: application/json
+
+{
+    "item": "Do the dishes",
+    "status": "Done"
+}
+
+### First DELETE Request
+DELETE http://localhost:8000/api/to_dos/1
