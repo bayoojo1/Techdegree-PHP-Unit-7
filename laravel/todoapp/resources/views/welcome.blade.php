@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Build a Laravel ToDo App</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -85,7 +85,9 @@
                 </div>
 
                 <div class="links">
+                    <a href="#">README</a>
                     <a href="{{env('app_url')}}/api/to_dos/" target="_blank">ToDo API</a>
+                    <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en" target="_blank">JSON Formatter</a>
                 </div>
             </div>
         </div>

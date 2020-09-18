@@ -2,7 +2,7 @@
 GET http://localhost:8000/api/to_dos
 
 ### SINGLE TODO
-GET http://127.0.0.1:8000/api/to_dos/3
+GET http://127.0.0.1:8000/api/to_dos/7
 
 ### BAD POST request
 POST http://localhost:8000/api/to_dos/
@@ -18,16 +18,16 @@ POST http://localhost:8000/api/to_dos/
 Content-Type: application/json
 
 {
-    "item": "Fix the light bulb in my room",
+    "item": "Do my laundry",
     "status": "To Do"
 }
 
 ### First Todo PUT Request
-POST http://localhost:8000/api/to_dos/1?_method=PUT
+POST http://localhost:8000/api/to_dos/8?_method=PUT
 Content-Type: application/json
 
 {
-    "item": "Do the dishes",
+    "item": "Do my laundry",
     "status": "In Progress"
 }
 

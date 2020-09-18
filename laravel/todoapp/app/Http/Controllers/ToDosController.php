@@ -43,9 +43,9 @@ class ToDosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(ToDo $todo)
+    public function show(ToDo $to_do)
     {
-        return response(new TodosResource($todo), 200);
+        return response(new TodosResource($to_do), 200);
     }
 
     /**
@@ -55,7 +55,7 @@ class ToDosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ToDo $todo)
+    public function update(Request $request, ToDo $to_do)
     {
         $validate = Validator::make($request->toArray(), [
             'item' => 'required',
@@ -64,8 +64,8 @@ class ToDosController extends Controller
         if($validate->fails()){
             return response($validate->errors(), 400);
         }
-        $todo->update($validate->validate());
-        return response(new TodosResource($todo), 201);
+        $to_do->update($validate->validate());
+        return response(new TodosResource($to_do), 201);
     }
 
     /**
@@ -74,9 +74,9 @@ class ToDosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ToDo $todo)
+    public function destroy(ToDo $to_do)
     {
-        $todo->delete();
+        $to_do->delete();
         return response(null, 204);
     }
 }
