@@ -86,7 +86,7 @@
 
                 <div class="links">
                     <a href="#">README</a>
-                    <a href="{{env('app_url')}}/api/to_dos/" target="_blank">ToDo API</a>
+                    <a href="{{env('app_url')}}/api/todos/" target="_blank">ToDo API</a>
                     <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en" target="_blank">JSON Formatter</a>
                 </div>
             </div>

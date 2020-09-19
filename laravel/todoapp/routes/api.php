@@ -24,4 +24,4 @@ use Illuminate\Support\Facades\Route;
 // Route::delete('to_dos/{todo}','ToDosController@destroy');
 // Route::post('to_dos','ToDosController@store');
 
-Route::apiResource('to_dos','ToDosController');
+Route::apiResource('todos','ToDosController');
