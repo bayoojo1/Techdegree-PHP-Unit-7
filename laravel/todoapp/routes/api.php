@@ -14,14 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::apiResource([
-//     'to_dos' => 'ToDosController'
-// ]);
-// Route::get('to_dos','ToDosController@index');
-// Route::get('to_dos/{todo}','ToDosController@show');
-// Route::put('to_dos/{todo}','ToDosController@update');
-// Route::patch('to_dos/{todo}','ToDosController@update');
-// Route::delete('to_dos/{todo}','ToDosController@destroy');
-// Route::post('to_dos','ToDosController@store');
-
 Route::apiResource('todos','ToDosController');
